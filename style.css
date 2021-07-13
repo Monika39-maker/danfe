@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+html {
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 100%;
+}
+header {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 2;
+}
+header a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 20px;
+}
+.cursive-text {
+  font-family: "Dancing Script", cursive;
+}
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.25rem;
+  font-weight: 15px;
+  z-index: 5;
+  color: rgb(130, 159, 219);
+  position: relative;
+  top: 30vh;
+  left: 0;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  letter-spacing: 5px;
+  background: rgba(210, 105, 30, 0.788);
+
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  height: 100px;
+  padding-top: 15px;
+}
+header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 35%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+header {
+  display: flex;
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: space-around;
+  z-index: 2;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 5%;
+}
+nav ul li a {
+  color: antiquewhite;
+  font-size: 0.9rem;
+  margin-right: 5%;
+  text-decoration: none;
+}
+
+.slides {
+  display: flex;
+  max-width: 100vw;
+}
+.slide {
+  transition: 2s;
+}
+.slide img {
+  width: 800px;
+}
+input {
+  display: none;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  top: -90px;
+}
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  left: 0;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 3s;
+  cursor: pointer;
+  margin: 1%;
+}
+.manual-btn:hover {
+  background: #40d3dc;
+}
+/* manual navigation */
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -800px;
+}
+#radio3:checked ~ .first {
+  margin-left: -1700px;
+}
+#radio4:checked ~ .first {
+  margin-left: -2550px;
+}
+
+/*for automatic slide */
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 400px;
+  background: violet;
+}
+
+.manual-btn {
+  border: 2px solid red;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #40d3dc;
+}
+.radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #40d3dc;
+}
+.radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #40d3dc;
+}
+.radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #40d3dc;
+}
+
+section {
+  position: absolute;
+  top: -8vh;
+}
+.text {
+  position: relative;
+  top: 80vh;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.info {
+  position: relative;
+  top: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.food {
+  margin-bottom: 2%;
+  background: coral;
+  padding: 2%;
+}
+footer {
+  position: relative;
+  top: 100vh;
+}
+.contact-info {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: burlywood;
+}
+.address-and-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
