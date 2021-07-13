@@ -49,6 +49,8 @@ nav {
   width: 100%;
   justify-content: space-between;
   color: white;
+  background: rgb(130, 159, 219);
+  z-index: 3;
 }
 header {
   display: flex;
@@ -82,7 +84,7 @@ nav ul li a {
   transition: 2s;
 }
 .slide img {
-  width: 800px;
+  width: 100vw;
 }
 input {
   display: none;
@@ -120,13 +122,13 @@ input {
   margin-left: 0;
 }
 #radio2:checked ~ .first {
-  margin-left: -800px;
+  margin-left: -100vw;
 }
 #radio3:checked ~ .first {
-  margin-left: -1700px;
+  margin-left: -200vw;
 }
 #radio4:checked ~ .first {
-  margin-left: -2550px;
+  margin-left: -300vw;
 }
 
 /*for automatic slide */
@@ -195,6 +197,7 @@ section {
 footer {
   position: relative;
   top: 100vh;
+  background: rgb(130, 159, 219);
 }
 .contact-info {
   height: 100vh;
